@@ -38,6 +38,10 @@ bool StringUtil::Contains(const string &haystack, const string &needle) {
 	return (haystack.find(needle) != string::npos);
 }
 
+idx_t StringUtil::ToUnsigned(const string &str) {
+	return std::stoull(str);
+}
+
 void StringUtil::LTrim(string &str) {
 	auto it = str.begin();
 	while (it != str.end() && CharacterIsSpace(*it)) {

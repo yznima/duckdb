@@ -154,6 +154,8 @@ public:
 	DUCKDB_API static void URLDecodeBuffer(const char *input, idx_t input_size, char *output,
 	                                       bool plus_to_space = false);
 
+	DUCKDB_API static idx_t ToUnsigned(const string &str);
+
 	template <class T>
 	static string ToString(const vector<T> &input, const string &separator) {
 		vector<string> input_list;
