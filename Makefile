@@ -286,7 +286,7 @@ ifdef DUCKDB_PLATFORM
 endif
 
 ifeq ("${BUNDLE_LIBRARY_BASE}", "")
-    BUNDLE_LIBRARY_BASE:="release"
+    BUNDLE_LIBRARY_BASE:=release
 endif
 
 clean:
